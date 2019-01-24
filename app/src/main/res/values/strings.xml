@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="principal">Mis Contactos</string>
+    <string name="add">Agregar Contacto</string>
+    <string name="name">Nombre</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">e-mail</string>
+    <string name="back">Regresar</string>
+    <string name="crear">Crear</string>
+</resources>
