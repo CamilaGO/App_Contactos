@@ -9,6 +9,7 @@ import android.widget.ListView
 import com.example.camila.lab3.Logic.Contacto
 import com.example.camila.lab3.UI.CrearActivity
 import com.example.camila.lab3.UI.MyApplication
+import com.example.camila.lab3.UI.VerActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,14 @@ class MainActivity : AppCompatActivity() {
         val listViewPeople = findViewById<ListView>(R.id.listview_people)
         var adapter: ArrayAdapter<Contacto> = ArrayAdapter<Contacto>(this, R.layout.listview_item, context.contactos)
         listViewPeople.setAdapter(adapter)
+
+        //Si presiona a un contacto se direcciona a la activity con la informacion del mismo
+        listViewPeople.setOnItemClickListener { parent, view, position, id ->
+            //Se agrega la opcion elegida y se muestra un mensaje
+            val mostrar = Intent(this, VerActivity::class.java)
+            context.setChoosen(position)
+            startActivity(mostrar)
+        }
 
 
     }

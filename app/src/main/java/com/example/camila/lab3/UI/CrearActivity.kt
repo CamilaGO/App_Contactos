@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.camila.lab3.Logic.Contacto
 import com.example.camila.lab3.MainActivity
 import com.example.camila.lab3.R
@@ -17,7 +18,7 @@ class CrearActivity : AppCompatActivity() {
 
     }
 
-    //Boton para ver activity de nuevo contacto
+    //Boton para ver Mainactivity de nuevo
     fun onClick_Home(view: View){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
@@ -35,6 +36,6 @@ class CrearActivity : AppCompatActivity() {
         var context: MyApplication = applicationContext as MyApplication
         context.add(newContact)
         //Se muestra el toast de la acción exitosa
-        
+        Toast.makeText(this, "Se ha agregado $editTextName exitosamente" , Toast.LENGTH_LONG).show()
     }
 }

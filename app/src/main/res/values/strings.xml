@@ -7,4 +7,15 @@
     <string name="email">e-mail</string>
     <string name="back">Regresar</string>
     <string name="crear">Crear</string>
+    <string name="fotografia_de_contacto">imageView</string>
+    <string name="asunto">Asunto</string>
+    <string name="enviar_correo">Enviar Correo</string>
+    <string name="destinatario">Destinatario</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="de">De</string>
+    <string name="para">Para</string>
+    <string name="enviar">Enviar</string>
+    <string name="enviar_mail">Enviar Mail</string>
+    <string name="pista">Escribe tu mensaje aqui</string>
 </resources>

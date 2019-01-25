@@ -19,6 +19,10 @@
         </activity>
         <activity android:name=".UI.CrearActivity">
         </activity>
+        <activity android:name=".UI.VerActivity">
+        </activity>
+        <activity android:name=".UI.CorreoActivity">
+        </activity>
     </application>
 
 </manifest>
